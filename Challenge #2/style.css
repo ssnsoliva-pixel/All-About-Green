@@ -1,0 +1,195 @@
+
+/* =================================
+   ALL ABOUT GREEN
+   CHALLENGE #2 - CSS STYLING
+================================= */
+
+/* GENERAL SETTINGS */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+#header {
+    background-color: #004225;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#header p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* NAVIGATION */
+#navigation {
+    background-color: #556B2F;
+    text-align: center;
+    padding: 15px;
+}
+
+#navigation h2 {
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li {
+    display: inline;
+    margin: 10px;
+}
+
+#navigation a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navigation a:hover {
+    color: #DDE5C5;
+    text-decoration: underline;
+}
+
+/* HOME SECTION */
+#home {
+    background-color: #FFFFFF;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+/* SHADES OF GREEN SECTION */
+#shades {
+    background-color: #FFFFFF;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+/* GREEN FACTS SECTION */
+#facts {
+    background-color: #FFFFFF;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+/* MY GREEN STORY SECTION */
+#story {
+    background-color: #FFFFFF;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+/* GALLERY SECTION */
+#gallery {
+    background-color: #FFFFFF;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+/* SECTION HEADINGS */
+h2 {
+    color: #004225;
+}
+
+/* LISTS */
+#shades ul {
+    padding-left: 25px;
+}
+
+/* FOOTER */
+#footer {
+    background-color: #004225;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+
+    #header h1 {
+        font-size: 30px;
+    }
+
+    #navigation li {
+        display: block;
+        margin: 12px;
+    }
+
+    #home,
+    #shades,
+    #facts,
+    #story,
+    #gallery {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+
+
+/* MY GREEN STORY DESIGN */
+#story {
+    background-color: #E8EEDC;
+    border-left: 7px solid #556B2F;
+    padding: 35px;
+}
+
+#story h2 {
+    color: #004225;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#story .story-intro {
+    color: #556B2F;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#story p {
+    color: #394536;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+#story strong {
+    color: #556B2F;
+}
+
+#story .story-ending {
+    color: #004225;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    border-top: 1px solid #9CAF88;
+    padding-top: 20px;
+    margin-top: 25px;
+}
