@@ -1,0 +1,563 @@
+
+/* =========================================
+   ALL ABOUT GREEN
+   CHALLENGE #7 - BLOCK, INLINE, CLASS, AND ID
+========================================= */
+
+
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F3EA;
+    color: #344238;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HEADER AND VIDEO HERO
+========================================= */
+
+#header {
+    position: relative;
+    min-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #174A32;
+    color: #FFFFFF;
+}
+
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 48, 31, 0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    font-size: 17px;
+}
+
+.hero-content .eyebrow {
+    color: #DCE5D2;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #4F772D;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #91A875;
+}
+
+
+/* =========================================
+   NAVIGATION MENU
+========================================= */
+
+#navigation {
+    background-color: #4F772D;
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+#navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#navigation a:hover {
+    background-color: #174A32;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   MAIN PAGE LAYOUT
+========================================= */
+
+.page-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+    gap: 35px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 40px auto;
+    padding: 0 45px;
+}
+
+.main-content {
+    min-width: 0;
+}
+
+
+/* =========================================
+   CONTENT CARDS
+========================================= */
+
+.content-card {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(23, 74, 50, 0.07);
+    border: 1px solid #E5E9DF;
+}
+
+.content-card h2 {
+    color: #174A32;
+    font-size: 26px;
+    margin-top: 5px;
+}
+
+.content-card p {
+    color: #4A554A;
+}
+
+.section-label {
+    color: #4F772D !important;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   SHADES OF GREEN
+========================================= */
+
+.color-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #F5F3EA;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.forest {
+    background-color: #174A32;
+}
+
+.olive {
+    background-color: #556B2F;
+}
+
+.sage {
+    background-color: #91A875;
+}
+
+.pistachio {
+    background-color: #DCE5D2;
+}
+
+.emerald {
+    background-color: #50C878;
+}
+
+.mint {
+    background-color: #98FF98;
+}
+
+.moss {
+    background-color: #8A9A5B;
+}
+
+.lime {
+    background-color: #32CD32;
+}
+
+
+/* =========================================
+   GREEN FACTS
+========================================= */
+
+.fact-list {
+    margin-top: 20px;
+}
+
+.fact-item {
+    display: flex;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid #E5E9DF;
+}
+
+.fact-item:last-child {
+    border-bottom: none;
+}
+
+.fact-number {
+    color: #4F772D;
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 35px;
+}
+
+.fact-item h3 {
+    color: #174A32;
+    margin: 0 0 5px;
+    font-size: 17px;
+}
+
+.fact-item p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   MY GREEN STORY
+========================================= */
+
+#story {
+    background-color: #DCE5D2;
+    border-left: 7px solid #4F772D;
+    padding: 35px;
+}
+
+#story h2 {
+    color: #174A32;
+}
+
+#story .story-intro {
+    color: #4F772D;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#story p {
+    line-height: 1.9;
+}
+
+#story strong {
+    color: #4F772D;
+}
+
+#story .story-ending {
+    color: #174A32;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    border-top: 1px solid #91A875;
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   GREEN GALLERY
+========================================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #F5F3EA;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+.gallery-item figcaption {
+    padding: 10px 12px;
+    color: #174A32;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    align-self: start;
+    position: sticky;
+    top: 90px;
+    background-color: #DCE5D2;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 5px solid #4F772D;
+    margin-right: 5px;
+}
+
+.sidebar h2 {
+    color: #174A32;
+    font-size: 22px;
+}
+
+.sidebar p {
+    color: #4A554A;
+}
+
+.sidebar-divider {
+    width: 45px;
+    height: 3px;
+    background-color: #91A875;
+    margin: 25px 0;
+}
+
+
+/* EXTERNAL CSS EXAMPLE */
+
+.sidebar .sidebar-quote {
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.8;
+    border-left: 3px solid #91A875;
+    padding-left: 14px;
+}
+
+.sidebar-link {
+    display: inline-block;
+    color: #174A32;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.sidebar-link:hover {
+    color: #4F772D;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+#footer {
+    background-color: #174A32;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+#footer p {
+    margin: 5px;
+}
+
+
+/* =========================================
+   HOME INTRODUCTION
+========================================= */
+
+.home-intro {
+    padding: 40px;
+    border-top: 5px solid #4F772D;
+}
+
+.home-intro h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.home-intro .home-highlight {
+    color: #4F772D;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #174A32;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #4F772D;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 750px) {
+
+    .page-layout {
+        grid-template-columns: 1fr;
+        padding: 0 25px;
+        gap: 20px;
+    }
+
+    .sidebar {
+        position: static;
+        margin-right: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    #navigation ul {
+        gap: 5px;
+    }
+
+    #navigation a {
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .page-layout {
+        padding: 0 16px;
+    }
+
+    .color-list {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 22px;
+    }
+
+    #story {
+        padding: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .home-intro {
+        padding: 25px;
+    }
+
+    .home-intro h2 {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    #navigation a,
+    .gallery-item img {
+        transition: none;
+    }
+}
